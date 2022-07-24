@@ -1,0 +1,134 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+
+}
+
+.nav-icon {
+    height: 30px;
+    width: 30px;
+    background-image: url('../../images/shared/logo.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-self: center;
+    background-color: white;
+    border: 0.01px solid white;
+    border-radius: 50%;
+    margin-left: 2rem;
+
+}
+
+.nav-ul {
+    padding-right: 26px;
+    height: 4rem;
+    width: 41rem;
+    /* background-color: white; */
+    backdrop-filter: blur(3rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.line {
+    position: relative;
+    width: 37rem;
+    height: 0.08px;
+    align-self: center;
+    background-color: white;
+    left: 2rem;
+}
+
+ul {
+    list-style-type: none;
+    text-decoration: none;
+
+}
+
+.nav-link {
+    text-decoration: none;
+    margin-right: 40px;
+    color: white;
+}
+
+.burger-btn {
+    display: none;
+}
+
+span {
+    margin: 8px;
+}
+
+@media screen and (max-width:1228px) {
+    .nav-ul {
+        padding-right: 0;
+    }
+
+    .nav-link {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width:1048px) {
+    .line {
+        display: none;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .burger-btn {
+        display: block;
+        position: absolute;
+        right: 3rem;
+        z-index: 999;
+        width: 44px;
+        height: 32px;
+        margin-top: 2rem;
+        background: transparent;
+        background-image: url('../../images/shared/icon-hamburger.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        border: 0;
+    }
+
+    .btn-close {
+        background-image: url('../../images/shared/icon-close.svg');
+    }
+
+    .burger-btn:focus {
+        border-bottom: 0;
+    }
+
+    .nav {
+        padding-top: 0;
+    }
+
+    .nav-ul,
+    .nav-ul ul {
+        display: none;
+    }
+
+    .nav-icon {
+        align-self: flex-start;
+        margin: 2rem 2rem;
+    }
+
+    .active {
+        width: 65%;
+        height: 100%;
+        backdrop-filter: blur(3rem);
+        display: flex;
+        border-left: 0.8px solid black;
+    }
+
+    .active ul {
+
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+}

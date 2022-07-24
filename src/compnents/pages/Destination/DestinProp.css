@@ -1,0 +1,170 @@
+.destination {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.destin-left {
+    flex: 1;
+    padding-left: 8rem;
+    margin-bottom: 6rem;
+}
+
+.des-rel {
+    position: relative;
+    right: 3rem;
+}
+
+.destin-left h3 {
+
+    margin-bottom: 3rem;
+    letter-spacing: 3px;
+}
+
+.destin-left h3 span {
+
+    color: grey;
+
+}
+
+.destin-pic {
+    background-repeat: no-repeat;
+    width: 19rem;
+    height: 19rem;
+}
+
+.destin-right {
+    flex: 1;
+    padding-right: 8rem;
+    padding-bottom: 6rem;
+}
+
+.destin-ul {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+
+
+}
+
+.destin-ul button {
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    border: none;
+    background-color: none;
+    background: none;
+}
+
+button:focus {
+    color: white;
+    transition: .1s ease-in-out;
+    border-bottom: 3px solid white;
+    padding-bottom: 9px;
+
+}
+
+.destin-right h1 {
+    font-size: 6.4rem;
+}
+
+.destin-line {
+    margin: 2rem 0;
+    border-bottom: 0.8px solid white;
+}
+
+.destin-dis {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.destin-one-h3 {
+    font-size: 2rem;
+}
+
+@media screen and (max-width:952px) {
+    .destin-right {
+        padding-right: 1.5rem;
+    }
+
+    .destin-left {
+        padding-left: 3rem;
+    }
+}
+
+@media screen and (max-width:878px) {
+    .destin-right h1 {
+        font-size: 5.4rem;
+    }
+
+    .destin-one-h3 {
+        font-size: 24px;
+    }
+
+    .destin-pic {
+        width: 17rem;
+        height: 17rem;
+    }
+}
+
+@media screen and (max-width:800px) {
+
+    .destination {
+        position: absolute;
+        top: 6rem;
+        z-index: -1;
+        flex-direction: column;
+        height: 150vh;
+    }
+
+    .destin-left {
+        flex: 0.4;
+        margin-bottom: 1rem;
+        margin-top: 0;
+    }
+
+    .destin-right {
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .destin-left h3 {
+        margin-bottom: 18px;
+        letter-spacing: 1px;
+        font-size: 17px;
+    }
+
+    .destin-pic {
+        width: 11rem;
+        height: 11rem;
+    }
+
+    .destin-dis {
+        flex-direction: column;
+    }
+
+    nav {
+        height: 4.2rem;
+    }
+
+    h1 {
+        height: 7rem;
+    }
+
+    .destin-one,
+    .destin-two {
+        padding-bottom: 3rem;
+    }
+
+    .destin-line {
+        width: 100%;
+    }
+}

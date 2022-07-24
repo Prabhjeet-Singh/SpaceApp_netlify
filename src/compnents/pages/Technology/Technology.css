@@ -1,0 +1,212 @@
+.tech-bg {
+    padding: 0;
+    margin: 0;
+    background-image: url('../../../images/technology/background-technology-desktop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.tech-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.tech-left {
+    flex: 1;
+    margin-left: 7rem;
+}
+
+.tech-left h2 span {
+    color: gray;
+}
+
+.tech-left h2 {
+    letter-spacing: 2px;
+    margin-bottom: 5rem;
+}
+
+.tech-left-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 3rem;
+
+}
+
+.flex-one button {
+    background: transparent;
+    width: 4rem;
+    height: 4rem;
+    border: 2px solid gray;
+    color: white;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    margin-right: 3rem;
+}
+
+.flex-two h1 {
+    font-size: 3.4rem;
+}
+
+.flex-two p {
+    line-height: 25px;
+}
+
+.tech-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 85vh;
+}
+
+.tech-right img {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 32rem;
+    height: 25rem;
+}
+
+.flex-one button:focus {
+    padding-bottom: 0;
+}
+
+@media screen and (max-width:1278px) {
+    .tech-left-flex {
+        padding-right: 1rem;
+    }
+}
+
+@media screen and (max-width:1218px) {
+    .tech-left {
+        margin-left: 2rem;
+    }
+}
+
+@media screen and (max-width:1132px) {
+    .tech-right img {
+        width: 23rem;
+        height: 21rem;
+    }
+
+    .tech-right {
+        flex: 0.7;
+    }
+}
+
+@media screen and (max-width:966px) {
+    .tech-left h2 {
+        letter-spacing: 1px;
+        margin-bottom: 3rem;
+        font-size: 22px;
+    }
+
+    .flex-one button {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .flex-two h1 {
+        font-size: 2.4rem;
+    }
+
+    .flex-two p {
+        line-height: 23px;
+        font-size: 14.4px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:840px) {
+    .tech-right img {
+        width: 17rem;
+        height: 18rem;
+    }
+
+    .tech-right {
+        flex: 0.5;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .tech-bg {
+        position: absolute;
+        z-index: -99;
+        overflow-y: scroll;
+    }
+
+    .tech-center {
+        position: absolute;
+        top: 6rem;
+        z-index: -1;
+        flex-direction: column-reverse;
+        height: 150vh;
+    }
+
+    .tech-right img {
+        width: 100vw;
+        height: 25rem;
+    }
+
+    .tech-right {
+        flex: 1.1;
+    }
+
+    .tech-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex-two h1 {
+        height: 3rem;
+    }
+
+    .tech-left-flex {
+        flex-direction: column;
+    }
+
+    .flex-two {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex-two p {
+        padding: 0 4rem;
+    }
+
+    .tech-left h2 {
+        margin-bottom: 1.7rem;
+    }
+
+    .flex-one button {
+        margin: 1rem 1.5rem;
+    }
+}
+
+@media screen and (max-width:454px) {
+    .flex-two p {
+        padding: 0 1rem;
+    }
+}
+
+@media screen and (max-width:454px) {
+    .tech-right {
+        flex: 0.8;
+    }
+}
+
+@media screen and (max-width:368px) {
+    .tech-right {
+        flex: 0.5;
+    }
+}

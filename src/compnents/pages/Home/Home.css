@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.Home-bg {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../../images/home/background-home-desktop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.Home {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    letter-spacing: 2px;
+}
+
+.Home-left {
+    flex: 2 2;
+    padding: 2rem;
+}
+
+.Space {
+    font-size: 8rem;
+}
+
+.Home-para {
+    font-size: medium;
+    padding-right: 22rem;
+    letter-spacing: 1px;
+}
+
+.Home-expo {
+    flex: 1;
+    display: flex;
+    text-align: center;
+}
+
+.Home-expo span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    width: 10rem;
+    height: 10rem;
+    font-size: large;
+    font-weight: 500;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: white;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1228px) {
+    .Home-para {
+        padding-right: 20rem;
+    }
+}
+
+@media screen and (max-width:1180px) {
+    .Home-para {
+        padding-right: 15rem;
+    }
+}
+
+@media screen and (max-width:1058px) {
+    .Home-para {
+        padding-right: 10rem;
+    }
+}
+
+@media screen and (max-width:888px) {
+    .Home {
+        flex-direction: column;
+    }
+
+    .Home-left {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 4rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    .Space {
+        font-size: 4rem;
+    }
+
+    .Home-para {
+        font-size: 0.89rem;
+        padding: 0rem;
+    }
+
+    .Home-expo span {
+        width: 7rem;
+        height: 7rem;
+        font-size: medium;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .Home-bg {
+        background-image: url('../../../images/home/background-home-tablet.jpg');
+    }
+}
+
+
+@media screen and (max-width:800px) {
+
+    .Home-bg {
+        position: absolute;
+        z-index: -99;
+    }
+
+    .Home {
+        position: absolute;
+        top: 6rem;
+        z-index: -1;
+    }
+}
+
+@media screen and (max-width:406px) {
+    .Home-bg {
+        background-image: url('../../../images/home/background-home-mobile.jpg');
+    }
+
+    .Home-expo {
+        flex: 0.6;
+    }
+
+    .Home-expo span {
+        height: 5rem;
+        width: 5rem;
+        font-size: xx-small;
+    }
+}

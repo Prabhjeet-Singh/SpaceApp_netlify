@@ -1,0 +1,18 @@
+.Destination-bg {
+    background-image: url('../../../images/destination/background-destination-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+@media screen and (max-width:800px) {
+    .Destination-bg {
+        position: absolute;
+        z-index: -99;
+        overflow-y: scroll;
+        transition: ease-in-out;
+    }
+}
